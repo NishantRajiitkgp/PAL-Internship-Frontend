@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+    font-family: sans-serif;
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title p{
+    color: grey;
+}
+input::placeholder {
+    color: #0c0b0b; /* Change placeholder color to gray */
+  }
+.contact-inputs{
+    width: 350px;
+    height: 50px;
+    border: 1.4px solid #080808;
+    outline: 1px;
+    padding-left:25px;
+    font-weight: 500;
+    color:#181818;
+    border-radius: 30px;
+}
+.contact-inputs:focus{
+    border: 2px solid blue;
+}
+.contact-input::placeholder{
+    color: #1b1919;
+}
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 180px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: blue;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 700;
+    
+}
+.glassy-button-login {
+    padding: 15px 145px;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#03085b,#05326d);
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden; /* Hide the overflow content when button is animated */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box-shadow */
+    z-index: 1; /* Ensure the button content is above the pseudo-element */
+}
+
+.glassy-button-login::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%; /* Adjust the width of the pseudo-element */
+    height: 300%; /* Adjust the height of the pseudo-element */
+    background: rgba(74, 2, 197, 0.3); 
+    transition: all 0.3s; /* Adjust the duration of the animation */
+    border-radius: 50%; /* Make the pseudo-element circular */
+    transform: translate(-50%, -50%) scale(0); /* Initially hide the pseudo-element */
+    z-index: -1; /* Ensure the pseudo-element is behind the button content */
+}
+
+.glassy-button-login:hover::before {
+    transform: translate(-50%, -50%) scale(2); /* Scale up the pseudo-element on hover */
+}
+
+.glassy-button-login:hover {
+    background: green; /* Change background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+}
+
+
+.contact-right .image-work{
+    width: 600px; 
+    height: auto; 
+    margin: 0px;
+    padding: 0px;
+    background: none;
+}
+@media (max-width:800px) {
+    .contact-inputs{
+        width:60vw;
+    }
+    .contact-right{
+        display: none;
+    }
+    
+}
+.contact-left p{
+    color: grey;
+}
+
+

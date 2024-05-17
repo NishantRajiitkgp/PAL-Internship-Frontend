@@ -1,0 +1,157 @@
+.profile-details-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+
+}
+.user-image{
+    width: 200px;
+    border-radius: 50%;
+    
+    
+}
+.profile-details-middle{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-top: 50px; */
+}
+.profile-details-middle h2{
+  margin: 20px;
+   color: blue;
+  
+}
+.middle-part-profile h2{
+    text-align: center;
+}
+.note-profile{
+    margin: 20px;
+}
+.profile-details-top ul {
+    list-style-type: none;
+  }
+  .profile-details-top ul h2{
+    color: grey;
+  }
+  .profile-details-top ul h1{
+    color: blue;
+    font-size: 70px;
+  }
+  .profile-details-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* If you want to center it horizontally with margin-left and margin-right auto */
+    margin-right: auto;
+}
+.full-profile{
+    align-items: center;
+    border: 1px solid #ccc; 
+    box-shadow: 1 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1100px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 7%;
+    border-radius: 5px;
+   
+}
+.user-image:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+  }
+  /* Important URLs Styling */
+  .url-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .url-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .url-icons {
+    font-size: 24px;
+    margin-right: 10px;
+    color: grey;
+  }
+  
+  .imp-urls {
+    flex: 1;
+    height: 30px; /* Adjust the height as needed */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .profile-detials-bottom {
+    margin: 20px;
+  }
+  .profile-detials-bottom li{
+    margin: 10px;
+    list-style: none;
+  }
+  .profile-detials-bottom h2{
+    margin-bottom: 20px;
+    color: blue;
+  }
+  .profile-details-mid-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+  }
+  .submit-container-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .submit-new-profile {
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    align-items: center;
+    padding: 15px 145px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#026715,#067541);
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden; /* Hide the overflow content when button is animated */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background color and box-shadow */
+    z-index: 1; /* Ensure the button content is above the pseudo-element */
+}
+.submit-new-profile::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%; /* Adjust the width of the pseudo-element */
+    height: 300%; /* Adjust the height of the pseudo-element */
+    background: rgba(4, 106, 43, 0.3); 
+    transition: all 0.3s; /* Adjust the duration of the animation */
+    border-radius: 50%; /* Make the pseudo-element circular */
+    transform: translate(-50%, -50%) scale(0); /* Initially hide the pseudo-element */
+    z-index: -1; /* Ensure the pseudo-element is behind the button content */
+}
+
+  .submit-new-profile:hover::before {
+    transform: translate(-50%, -50%) scale(2); /* Scale up the pseudo-element on hover */
+}
+
+.submit-new-profile:hover {
+    background: linear-gradient(270deg,#1e90ff,#00ced1); /* Change background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+}
+  
+
+  

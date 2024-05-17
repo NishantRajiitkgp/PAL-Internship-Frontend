@@ -1,0 +1,30 @@
+.left-side {
+  margin-left: 200px;
+  margin-top: 50px;
+  width: 710px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.left-side h1{
+  color: #0022e3;
+  margin: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.material{
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  
+}
+.material h3{
+  color: #0022e3;
+  margin-left: 50px;
+  white-space: nowrap;
+  width: 1200px;
+}
+.material p{
+  margin-right: 40px;
+}

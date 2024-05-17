@@ -1,0 +1,60 @@
+
+.main-side {
+    margin-left: 400px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    align-items: center;
+    margin-top: 50px;
+    width: 710px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .main-side h1{
+    color: #0022e3;
+    margin: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main-material{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    
+  }
+  .main-material h3{
+    color: #0022e3;
+    margin-left: 50px;
+    white-space: nowrap;
+    width: 1200px;
+  }
+  .main-material p{
+    margin-right: 40px;
+  }
+  textarea {
+    border-radius: 10px;
+    width: 400px;
+    height: 100px; /* Set a fixed height or adjust as needed */
+    padding: 10px;
+    resize: none; /* Disable resizing */
+    overflow: auto; /* Enable scrolling when content exceeds the height */
+    /* font-family: Arial, sans-serif;  */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Add border for clarity */
+}
+.date{
+    height: 50px;
+}
+#heading{
+  height: 50px;
+}
+input[type="date"] {
+  margin-right: 250px;
+  width: 100%;
+  height: 40px; /* Set a fixed height or adjust as needed */
+  padding: 10px;
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border for clarity */
+  border-radius: 5px; /* Add some border radius */
+}

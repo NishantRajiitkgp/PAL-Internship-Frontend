@@ -1,0 +1,46 @@
+
+
+.cards-new{   
+    margin-top: 10px;
+     display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+     gap: 15px;
+     padding: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     
+  }
+
+  .card-new{
+    width: 200px;
+    height: 420px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+    
+ 
+  }
+
+
+  /* .card li a:hover{
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+} */
+.card-new:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.plus {
+    font-size: 100px; /* Make the "+" sign very big */
+    text-align: center; /* Center the "+" sign horizontally */
+    line-height: 420px; /* Center the "+" sign vertically */
+    margin: 0; /* Remove default margin */
+}
+.plus:hover {
+  color: green; /* Change the color to green on hover */
+}
+
